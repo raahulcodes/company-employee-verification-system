@@ -1,0 +1,17 @@
+
+// creating an array list of employees
+let employees = [{name:"Rahul Sharma", dept: "IT", salary: 120000, yrsExp: 3, empStatus: "active"},
+                 {name:"Priyanka Sharma", dept: "HR", salary: 220000, yrsExp: 8, empStatus: "active"}
+                ];
+
+// function display to display all the employee details
+function display()
+{
+    employees.forEach(e=>
+    {
+        console.log("Employee Name: " + e.name + "\nDepartment: " + e.dept + "\nSalary: " + e.salary + "\nYears of Experience: " + e.yrsExp + "\nEmployee Status: " + e.empStatus);
+    }
+    )
+}
+
+display();
