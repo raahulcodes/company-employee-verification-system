@@ -17,10 +17,19 @@ function display()
 display();
 
 // displaying the employees with salary more than 50000
-console.log("Employees with salary 50000 and more")
+console.log("Employees with salary 50000 and more:")
 let salaryFifty = employees.filter(e=>e.salary>50000);
 salaryFifty.forEach(e=>
 {
     console.log(e.name);
+}
+)
+
+// displaying only employees that belong to IT Company
+console.log("Employees that belong to IT Department: ")
+let itEmp = employees.filter(e=>e.dept=="IT");
+itEmp.forEach(employee=>
+{
+    console.log(employee.name);
 }
 )
