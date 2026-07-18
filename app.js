@@ -59,3 +59,13 @@ else
 {
     console.log("Certain Employees dont have 2 Years of Experience");
 }
+
+// displaying all employees with experience greater than 5
+console.log("------All Employees with Experience more than 5 years-----")
+let expFive = employees.filter(e=>e.yrsExp>5);
+expFive.forEach(employee=>
+{
+    {
+    console.log(employee.name);
+}
+})
