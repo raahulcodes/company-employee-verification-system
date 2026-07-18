@@ -27,7 +27,7 @@ salaryFifty.forEach(e=>
 
 // displaying only employees that belong to IT Company
 console.log("Employees that belong to IT Department: ")
-let itEmp = employees.filter(e=>e.dept=="IT");
+let itEmp = employees.filter(e=>e.dept==="IT");
 itEmp.forEach(employee=>
 {
     console.log("------" + employee.name + "-------");
@@ -36,9 +36,14 @@ itEmp.forEach(employee=>
 
 // displaying the active employees
 console.log("------ Active Employees -------");
-let activeEmp = employees.filter(e=>e.empStatus=="active");
-activeEmp.forEach(employee=>
+let activeEmp = employees.every(e=>e.empStatus==="active");
+
+if(activeEmp)
 {
-    console.log(employee.name);
+    console.log("All Employees are Active");
 }
-)
+
+else 
+{
+    console.log("All Employees are not Active");
+}
