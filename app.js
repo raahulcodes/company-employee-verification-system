@@ -34,7 +34,7 @@ itEmp.forEach(employee=>
 }
 )
 
-// displaying the active employees
+// checking the active employees
 console.log("------ Active Employees -------");
 let activeEmp = employees.every(e=>e.empStatus==="active");
 
@@ -46,4 +46,16 @@ if(activeEmp)
 else 
 {
     console.log("All Employees are not Active");
+}
+
+// checking if all employees have experience of 2 years or not
+let expEmps = employees.every(e=>e.yrsExp>=2);
+if(expEmps)
+{
+    console.log("All Employees have experience of Minimum 2 Years");
+}
+
+else 
+{
+    console.log("Certain Employees dont have 2 Years of Experience");
 }
