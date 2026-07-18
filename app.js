@@ -21,7 +21,7 @@ console.log("Employees with salary 50000 and more:")
 let salaryFifty = employees.filter(e=>e.salary>50000);
 salaryFifty.forEach(e=>
 {
-    console.log(e.name);
+    console.log("----- " + e.name + " ------");
 }
 )
 
@@ -29,6 +29,15 @@ salaryFifty.forEach(e=>
 console.log("Employees that belong to IT Department: ")
 let itEmp = employees.filter(e=>e.dept=="IT");
 itEmp.forEach(employee=>
+{
+    console.log("------" + employee.name + "-------");
+}
+)
+
+// displaying the active employees
+console.log("------ Active Employees -------");
+let activeEmp = employees.filter(e=>e.empStatus=="active");
+activeEmp.forEach(employee=>
 {
     console.log(employee.name);
 }
