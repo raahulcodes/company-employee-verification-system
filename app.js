@@ -1,7 +1,8 @@
 
 // creating an array list of employees
 let employees = [{name:"Rahul Sharma", dept: "IT", salary: 120000, yrsExp: 3, empStatus: "active"},
-                 {name:"Priyanka Sharma", dept: "HR", salary: 220000, yrsExp: 8, empStatus: "active"}
+                 {name:"Priyanka Sharma", dept: "HR", salary: 220000, yrsExp: 8, empStatus: "active"},
+                 {name:"Gunishka Varshney", dept: "IT", salary: 55000, yrsExp: 1, empStatus: "inactive"}
                 ];
 
 // function display to display all the employee details
@@ -61,11 +62,18 @@ else
 }
 
 // displaying all employees with experience greater than 5
-console.log("------All Employees with Experience more than 5 years-----")
+console.log("------All Employees with Experience more than 5 years-----");
 let expFive = employees.filter(e=>e.yrsExp>5);
 expFive.forEach(employee=>
-{
     {
     console.log(employee.name);
+});
+
+// displaying all employees with salaries between 40,000 and 70,000
+console.log("------All Employees with Salaries Between 40,000 and 70,000-----");
+let salaryFourtySeventy = employees.filter(e=>e.salary>40000&&e.salary<70000);
+salaryFourtySeventy.forEach(employee=>
+{
+    console.log(employee.name);
 }
-})
+)
