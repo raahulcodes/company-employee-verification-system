@@ -77,3 +77,12 @@ salaryFourtySeventy.forEach(employee=>
     console.log(employee.name);
 }
 )
+
+// displaying every employee from "HR" Department
+console.log("------- Employees of HR Department ------")
+let hrEmp = employees.filter(e=>e.dept==="HR");
+hrEmp.forEach(employee=>
+{
+    console.log(employee.name);
+}
+)
