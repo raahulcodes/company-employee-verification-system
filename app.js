@@ -2,7 +2,8 @@
 // creating an array list of employees
 let employees = [{name:"Rahul Sharma", dept: "IT", salary: 120000, yrsExp: 3, empStatus: "active"},
                  {name:"Priyanka Sharma", dept: "HR", salary: 220000, yrsExp: 8, empStatus: "active"},
-                 {name:"Gunishka Varshney", dept: "IT", salary: 55000, yrsExp: 1, empStatus: "inactive"}
+                 {name:"Gunishka Varshney", dept: "IT", salary: 55000, yrsExp: 1, empStatus: "inactive"},
+                 {name:"Rajeev Sharma", dept: "Finance", salary: 235000, yrsExp: 40, empStatus: "active"}
                 ];
 
 // function display to display all the employee details
@@ -88,6 +89,16 @@ hrEmp.forEach(employee=>
 )
 
 // checking whether every employee belongs to "HR" or "IT"
+let checkDept = employees.every(employee=>employee.dept==="HR" || employee.dept==="IT");
+if(checkDept)
+{
+    console.log("Every Employee belongs to HR or IT");
+}
+else 
+{
+    console.log("Not Every Employee belongs to IT or HR");
+}
+
 
 // displaying each employee name in uppercase
 console.log("---- All Employees ----");
