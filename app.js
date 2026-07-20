@@ -78,11 +78,21 @@ salaryFourtySeventy.forEach(employee=>
 }
 )
 
-// displaying every employee from "HR" Department
+// displaying ebery employee from "HR" Department
 console.log("------- Employees of HR Department ------")
 let hrEmp = employees.filter(e=>e.dept==="HR");
 hrEmp.forEach(employee=>
 {
     console.log(employee.name);
+}
+)
+
+// checking whether every employee belongs to "HR" or "IT"
+
+// displaying each employee name in uppercase
+console.log("---- All Employees ----");
+employees.forEach(employee=>
+{
+    console.log(employee.name.toUpperCase());
 }
 )
